@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* --------------------------------------------
+------------------------------------------ HEADER 
+----------------------------------------------*/
+.top {
+  margin: 50px 0 130px 0;
+  display: flex;
+  width: 1321px;
+  height: 646px;
+  background-color: #161616;
+  border-radius: 30px;
+  color: white;
+}
+/* ----------------------------- top-left */
+.top-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 106px;
+  width: 40%;
+  font-size: 16px;
+}
+.top-left .headline {
+  font-size: 70px;
+  font-weight: 700;
+  margin: 0;
+}
+.top-button {
+  color: white;
+  padding: 16px 25px;
+  background-color: #dd0000;
+  border-radius: 5px;
+  border: 0;
+}
+.fa-greater-than {
+  padding-left: 10px;
+}
+/*------------------------------ top-right */
+.top-right {
+  width: 50%;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+.top-right img {
+  width: 613px;
+}
+/* --------------------------------------------
+------------------------------------------- MID 
+----------------------------------------------*/
+.mid {
+  width: 1321px;
+  display: flex;
+  margin-bottom: 130px;
+  justify-content: space-between;
+}
+/* --------------------------- mid-left */
+.mid-left {
+  height: 312px;
+  width: 312px;
+  border-radius: 10px;
+  background-color: #161616;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #161616;
+}
+.mid-left button {
+  font-weight: 500;
+  font-size: 20px;
+  border: 0;
+  border-radius: 10px;
+  height: 64px;
+  width: 252px;
+}
+.button-1 {
+  background-color: #dd0000;
+  color: white;
+}
+/* --------------------------- mid-right */
+.mid-right {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 24px;
+}
+.blog {
+  width: 312px;
+  height: 242px;
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px solid #16161617;
+}
+.flag {
+  display: flex;
+  justify-content: space-evenly;
+}
+.flag > img {
+  padding: 0 23px;
+}
+.flag > h4 {
+  font-size: 16px;
+}
+.blog > h3 {
+  margin: 0;
+  margin-top: 10px;
+  font-size: 20px;
+}
+.match-time {
+  margin-top: 10px;
+  font-size: 16px;
+}
+.tab-extra {
+  display: none;
+}
+/*------------------------------------------
+------------------------------------ FOOTER 
+---------------------------------------------*/
+footer {
+  padding: 150px 10%;
+  width: 80%;
+  background-color: #161616;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .text {
+  text-align: center;
+  width: 100%;
+  font-size: 40px;
+  padding-bottom: 50px;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+footer .final {
+  font-size: 16px;
+  color: #b9b9b9;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+/*----------------------------------------- 
+------------------------------------- MEDIA 
+-----------------------------------------*/
+
+/*-------------------------------- MOBILE */
+@media only screen and (max-width: 767px) {
+  .top {
+    border-radius: 10px;
+    width: 334px;
+    height: 472px;
+    margin-bottom: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 28px;
+  }
+  .top-left {
+    align-items: center;
+    padding: 0;
+    margin-bottom: 10px;
+    width: 50%;
+    text-align: center;
+  }
+  .top-left .headline {
+    width: 130%;
+    font-size: 22px;
+  }
+  .top-left .text {
+    width: 258px;
+    white-space: nowrap;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .text > p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .top-left button {
+    padding: 12px;
+    font-size: 20px;
+  }
+  .top-right {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .top-right img {
+    width: 83%;
+  }
+  .mid {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+    margin-bottom: 25px;
+  }
+  .mid-left {
+    background-color: white;
+  }
+  .mid-left button {
+    width: 230px;
+    border: 0.5px solid #16161617;
+  }
+  .mid-right {
+    width: 334px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 16px;
+  }
+  .blog {
+    width: 334px;
+  }
+  footer {
+    padding: 0;
+    width: 100%;
+    display: flex;
+  }
+  footer .text {
+    font-size: 22px;
+    width: 335px;
+    pad: 0;
+  }
+  footer .final {
+    font-size: 14px;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+/*------------------------------------ TABLE */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .top {
+    width: 734px;
+    height: 398px;
+    margin: 50px 0;
+    margin-bottom: 0;
+  }
+  .top-left {
+    padding-left: 70px;
+  }
+  .top-left .headline {
+    font-size: 40px;
+  }
+  .top-left .text {
+    width: 316px;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .top-left button {
+    padding: 12px;
+    font-size: 20px;
+  }
+  .top-right img {
+    height: 100%;
+  }
+  .mid {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  .mid-left {
+    width: 734px;
+    height: 64px;
+    margin: 70px 11px 30px 11px;
+    font-size: 8px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .mid-left button {
+    width: 230px;
+    border: 0.5px solid #16161617;
+  }
+  .mid-right {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
+  }
+  .blog {
+    width: 357px;
+  }
+  .tab-extra {
+    font-size: 20px;
+    display: block;
+    color: white;
+    padding: 12px 29px;
+    margin: 50px 0 69px 0;
+    background-color: #dd0000;
+    border-radius: 5px;
+    border: 0;
+  }
+  footer {
+    height: 345px;
+    padding: 70px 100px 55px 100px;
+  }
+  footer .final {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    font-size: 16px;
+  }
+  footer > .final > p {
+    padding: 0 15px;
+  }
+}
