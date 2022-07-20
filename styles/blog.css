@@ -47,9 +47,9 @@ body {
   border: 0;
   transition: transform 0.5s ease-out, box-shadow ease-out 0.5s;
 }
-.top:hover >.top-left> .top-button {
+.top:hover > .top-left > .top-button {
   transform: translate(100%, 50%) scale(2);
-  box-shadow: 2px 2px 20px 5px rgba(255, 255, 0, 0.233);
+  box-shadow: 2px 2px 30px 5px rgba(255, 255, 0, 0.705);
 }
 
 .fa-greater-than {
@@ -93,6 +93,12 @@ body {
   border-radius: 10px;
   height: 64px;
   width: 252px;
+}
+.mid-left button:hover {
+  background-color: rgb(0, 122, 221);
+  color: white;
+  transform: scale(1.2);
+  transition: transform 0.5s ease-out, background-color 0.5s ease-out;
 }
 .button-3 {
   background-color: #dd0000;
@@ -353,6 +359,12 @@ footer .social {
     background-color: #dd0000;
     border-radius: 5px;
     border: 0;
+  }
+  .tab-extra:hover {
+    background-color: rgb(0, 122, 221);
+    color: white;
+    transform: scale(1.2);
+    transition: transform 0.5s ease-out, background-color 0.5s ease-out;
   }
   footer {
     padding: 70px auto 55px auto;
