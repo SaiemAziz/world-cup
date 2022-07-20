@@ -38,9 +38,15 @@ body {
 .top-button {
   color: white;
   padding: 16px 25px;
+  margin-top: 10px;
   background-color: #dd0000;
   border-radius: 5px;
   border: 0;
+  transition: transform 0.5s ease-out, box-shadow ease-out 0.5s;
+}
+.top-left:hover>.top-button {
+  transform: translate(100%, 50%) scale(2);
+  box-shadow: 2px 2px 20px 5px rgba(255, 255, 0, 0.233);
 }
 .fa-greater-than {
   padding-left: 10px;
@@ -153,6 +159,19 @@ footer .final {
   display: flex;
   justify-content: space-around;
 }
+footer .social{
+  padding-top: 5%;
+  width: 20%;
+  font-size: 20px;
+  display:flex;
+  justify-content: center;
+}
+.icon{
+  padding: 10px 10%;
+}
+.icon:visited{
+  color: inherit;
+}
 /*----------------------------------------- 
 ------------------------------------- MEDIA 
 -----------------------------------------*/
@@ -190,9 +209,14 @@ footer .final {
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  .top-left button {
+  .top-button {
     padding: 12px;
     font-size: 20px;
+    transition: transform 0.5s ease-out, box-shadow ease-out 0.5s;
+  }
+  .top:hover>.top-left>.top-button {
+    transform: scale(1.3);
+    box-shadow: 2px 2px 20px 5px rgba(255, 255, 0, 0.233);
   }
   .top-right {
     display: flex;
@@ -200,7 +224,7 @@ footer .final {
     width: 100%;
   }
   .top-right img {
-    width: 83%;
+    width: 84%;
   }
   .mid {
     width: 100%;
@@ -225,6 +249,7 @@ footer .final {
   .blog {
     width: 334px;
   }
+  
   footer {
     padding: 0;
     width: 100%;
@@ -233,15 +258,21 @@ footer .final {
   footer .text {
     font-size: 22px;
     width: 335px;
-    pad: 0;
+    padding: 20px;
   }
   footer .final {
     font-size: 14px;
     align-items: center;
     flex-direction: column;
   }
+  .icon{
+    margin-bottom: 30px;
+  }
+  .icon:visited{
+    color: inherit;
+  }
 }
-/*------------------------------------ TABLE */
+/*------------------------------------ TABLET */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .top {
     width: 734px;
@@ -260,9 +291,13 @@ footer .final {
     font-weight: 400;
     font-size: 14px;
   }
-  .top-left button {
+  .top-button {
     padding: 12px;
-    font-size: 20px;
+    font-size: 20px;transition: transform 0.5s ease-out , box-shadow ease-out 0.5s;
+  }
+  .top:hover>.top-left>.top-button {
+    transform: translate(50%, 25%) scale(1.7);
+    box-shadow: 2px 2px 20px 5px rgba(255, 255, 0, 0.233);
   }
   .top-right img {
     height: 100%;
@@ -307,7 +342,7 @@ footer .final {
   }
   footer {
     height: 345px;
-    padding: 70px 100px 55px 100px;
+    padding: 70px auto 55px auto;
   }
   footer .final {
     display: flex;
@@ -318,5 +353,15 @@ footer .final {
   }
   footer > .final > p {
     padding: 0 15px;
+  }
+  footer a{
+    text-decoration: none;
+    color: white;
+  }
+  .icon{
+    margin-bottom: 30px;
+  }
+  .icon:visited{
+    color: inherit;
   }
 }
