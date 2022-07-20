@@ -46,7 +46,7 @@ body {
 }
 .top:hover > .top-left > .top-button {
   transform: translate(100%, 50%) scale(2);
-  box-shadow: 2px 2px 30px 5px rgba(255, 255, 0, 0.705);
+  box-shadow: 2px 2px 20px 5px rgba(255, 255, 0, 0.288);
 }
 .fa-greater-than {
   padding-left: 10px;
